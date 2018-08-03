@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'newJumpPage.dart';
+import '../widgets/BannerView.dart';
 
 class FirstPage extends StatefulWidget {
   @override
@@ -14,14 +14,6 @@ class FirstPageState extends State<FirstPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text("111111"),
-          RaisedButton(
-            child: Text("跳转"),
-            onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
-                return JumpPage();
-              }));
-            },
-          )
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'newJumpPage.dart';
 
 class SecondPage extends StatefulWidget {
   @override
@@ -9,7 +10,20 @@ class SecondPageState extends State<SecondPage> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("222222222"),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text("2222222"),
+          RaisedButton(
+            child: Text("跳转"),
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
+                return JumpPage();
+              }));
+            },
+          )
+        ],
+      ),
     );
   }
 }
