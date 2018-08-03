@@ -4,6 +4,7 @@ import './views/firstPage.dart';
 import './views/secondPage.dart';
 import './views/thirdPage.dart';
 import './views/fourthPage.dart';
+import './widgets/MyDrawer.dart';
 
 void main() => runApp(new MyApp());
 
@@ -47,11 +48,7 @@ class MainWidget extends State<MyApp> {
             });
           },
         ),
-        drawer: Drawer(
-          child: Center(
-            child: Text("侧滑"),
-          ),
-        ),
+        drawer: MyDrawer(),
       ),
     );
   }
